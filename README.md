@@ -3,6 +3,8 @@
 
 AWS has recommended their own way of doing this [here](https://aws.amazon.com/blogs/mt/resolving-circular-dependency-in-provisioning-of-amazon-s3-buckets-with-aws-lambda-event-notifications/). Although this doesn't handle the bucket needing to be created initially and it's a bit more complicated than it needs to be.
 
+I would recommend using the serverless framework or AWS CDK over this. Much simpler. However if you are limited to CloudFormation then this will work well.
+
 ## Usage
 Initial creation of stack
 
