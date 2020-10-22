@@ -1,0 +1,17 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: S3 Bucket
+Parameters: 
+  BucketName: 
+    Type: String
+    Description: Bucket name
+
+Resources:
+  LambdaBucket:
+    Type: AWS::S3::Bucket
+    DeletionPolicy: Retain
+    Properties:
+      BucketName: !Ref BucketName
+
+Outputs:
+  BucketName:
+    Value: !Ref 'LambdaBucket'
