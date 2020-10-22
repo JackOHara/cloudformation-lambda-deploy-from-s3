@@ -5,7 +5,9 @@ AWS has recommended their own way of doing this [here](https://aws.amazon.com/bl
 
 ## Usage
 Initial creation of stack
+
 ```./create-stack.sh --stack-name lambda-deploy-demo --bucket-name lambda-deploy-demo-johara```
 
 Update the existing stack
+
 ```./update-stack.sh --stack-name lambda-deploy-demo```
